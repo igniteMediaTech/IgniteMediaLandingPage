@@ -4,14 +4,32 @@
 * {
     /* border: 1px dotted red; */
 }
-main {
-    background-image: url(assets/header.png);
-    height: 982px;
-    max-width: 1512px;
-    margin: 0px auto;
-} 
 
-.nav-link {
+.main {
+    width: 1512px;
+    height: 982px;
+    background-image: url(assets/header.png);
+    margin: auto;
+}
+
+.img-logo img {
+    position: absolute;
+    width: 112px;
+    height: 103px;
+    left: 102px;
+    top: 37px;
+}
+
+.nav-container {
+    width: 1512px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 60px;
+    padding-right:30px ;
+
+}
+
+.nav-item {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 600;
@@ -19,14 +37,16 @@ main {
     line-height: 25px;
 
     color: #404040;
+    padding-top: 66px;
 }
 
-#main-logo {
-    width: 112px;
-    height: 103px;
-}
+.heading {
+    position: absolute;
+    width: 625px;
+    height: 190px;
+    left: calc(50% - 625px/2 - 352.5px);
+    top: calc(50% - 190px/2 - 53px);
 
-.main-body-header {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 600;
@@ -39,24 +59,13 @@ main {
     backdrop-filter: blur(250px);
 }
 
-.main-body {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
-    height: 615px;
-    max-width: 1512px  ;
+.sub-heading {
+    position: absolute;
+    width: 539px;
+    height: 60px;
+    left: 134px;
+    top: 577px;
 
-}
-
-.main-body-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.main-body-sub {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 600;
@@ -65,31 +74,12 @@ main {
     text-align: center;
 
     color: #262626;
-    margin: 0 100px;
 }
 
-.main-body-image {
+.main-img img {
+    position: absolute;
+    width: 730px;
+    height: 615px;
+    left: 752px;
+    top: 223px;
 }
-
-@media only screen and (max-width: 400px) {
-   .main-body-header {
-    font-size: 35px;
-    line-height: 44px;
-   }
-   .main-body-sub {
-    font-size: 16px;
-    line-height: 20px;
-    margin: 0;
-   }
-  }
-  
-  @media only screen and (max-width: 700px) {
-    .main-body {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .main-body-sub {
-        margin: 0;
-       }
-   }
