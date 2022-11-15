@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Outfit:wght@400;500;600&display=swap');
+
+
+* {
+    /* border: 1px dotted red; */
+}
+main {
+    background-image: url(assets/header.png);
+    height: 982px;
+    max-width: 1512px;
+    margin: 0px auto;
+} 
+
+.nav-link {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #404040;
+}
+
+#main-logo {
+    width: 112px;
+    height: 103px;
+}
+
+.main-body-header {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 75px;
+    line-height: 94px;
+    text-align: center;
+
+    color: #262626;
+
+    backdrop-filter: blur(250px);
+}
+
+.main-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+    height: 615px;
+    max-width: 1512px  ;
+
+}
+
+.main-body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main-body-sub {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #262626;
+    margin: 0 100px;
+}
+
+.main-body-image {
+}
+
+@media only screen and (max-width: 400px) {
+   .main-body-header {
+    font-size: 35px;
+    line-height: 44px;
+   }
+   .main-body-sub {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+   }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .main-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-body-sub {
+        margin: 0;
+       }
+   }
